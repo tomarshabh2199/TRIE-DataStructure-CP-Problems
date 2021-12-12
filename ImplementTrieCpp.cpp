@@ -10,7 +10,6 @@ yOut Trie object will be instantiated and called as such
  bool check3= obj->startsWith(prefix);
  */
 
-
  struct Node{
      Node *links[26];
      bool flag=false;
@@ -51,8 +50,6 @@ yOut Trie object will be instantiated and called as such
            }
            node->setEnd();
        }  
-
-
 
        /** Returns if the word is in the trie. */
        bool search(string word){
