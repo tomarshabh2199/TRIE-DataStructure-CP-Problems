@@ -38,12 +38,17 @@
      
 4.Count Distinct Substrings
 
-     Problem Statement
+     Problem Statement-
      Given a string 'S', you are supposed to return the number of distinct substrings(including empty substring) of the given string.
      You should implement the program using a trie.
      Note :
      A string ‘B’ is a substring of a string ‘A’ if ‘B’ that can be obtained by deletion of, several characters(possibly none) from the start of ‘A’ and                            several characters(possibly none) from the end of ‘A’. 
      Two strings ‘X’ and ‘Y’ are considered different if there is at least one index ‘i’  such that the character of ‘X’ at index ‘i’ is different from the character of ‘Y’        at index ‘i’(X[i]!=Y[i]).
+     
+ 5.Maximum XOR
+   
+      Problem Statement-
+      You are given two arrays of non-negative integers say ‘arr1’ and ‘arr2’. Your task is to find the maximum value of ( ‘A’ xor ‘B’ ) where ‘A’ and ‘B’ are any element from ‘arr1’ and ‘arr2’ respectively and ‘xor’ represents the bitwise xor operation.
 
 
 
