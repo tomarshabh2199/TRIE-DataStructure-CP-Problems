@@ -3,9 +3,9 @@
 1.Implement Trie
 
      Implement Trie Data Structure to support these operations:
-     insert(word) - To insert a string "word" in Trie
-     search(word) - To check if string "word" is present in Trie or not.
-     startsWith(word) - To check if there is any string in the Trie that starts with the given prefix string "word".
+        -insert(word) - To insert a string "word" in Trie
+        -search(word) - To check if string "word" is present in Trie or not.
+        -startsWith(word) - To check if there is any string in the Trie that starts with the given prefix string "word".
      
      
 2.Implement Trie ll
@@ -23,7 +23,6 @@
      
          Note:
          1. If erase(“WORD”) function is called then it is guaranteed that the “WORD” is present in the “TRIE”.
-
          2. If you are going to use variables with dynamic memory allocation then you need to release the memory associated with them at the end of your solution.
          
  3.Complete String
@@ -61,6 +60,3 @@
     
      Note:
      1. If all integers are greater than ‘Ai’ in array/list ‘ARR’  then the answer to this ith query will be -1.
-
-
-
