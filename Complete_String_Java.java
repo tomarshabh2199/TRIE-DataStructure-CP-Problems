@@ -37,7 +37,6 @@ class Trie{
      }
 
      /** Insert a word into the trie */
-
      void insert(string word){
          Node *node=root;
          for(int i=0;i<word.size();i++){
@@ -50,8 +49,7 @@ class Trie{
          node->setEnd();
      }
      
-
-     boolean checkIfAllPrefixExists(string word){
+    boolean checkIfAllPrefixExists(string word){
          Node *node=root;
          boolean flag=true;
          for(int i=0;i<word.size() && flag; i++){
@@ -86,17 +84,3 @@ string completeString(int n, vector<string> &a){
          return "None";
     return longest;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
