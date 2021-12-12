@@ -6,7 +6,6 @@ class Node{
     boolean flag=false;
 
     public Node(){
-
     }
 
     boolean containsKey(char ch){
@@ -29,8 +28,6 @@ class Node{
         return flag;
     }
 };
-
-
 
 public class Trie{
     private static Node root;
@@ -69,7 +66,6 @@ public class Trie{
       }
       return false;
     }
-
 
     //Returns if there is any word in the trie that starts with the given prefix
      public static boolean starsWith(String prefix){

@@ -56,10 +56,13 @@ class Trie{
 };
 
 vector<int> maxXorQueries(vector<int> &arr, vector<vector<int>> & queries) {
+    
     vector<int> ans(queries.size(),0);
     vector<pair<int,pair<int,int>>> offlineQueries;
+    
     sort(arr.begin(), arr.end());
     int index=0;
+    
     for(auto &it:queries){
         offlineQueries.push_back({it[1],{it[0],index++}});
     }

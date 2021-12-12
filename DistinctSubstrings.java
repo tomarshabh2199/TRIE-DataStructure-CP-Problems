@@ -23,14 +23,13 @@ class Node{
     void setEnd(){
         flag=true;
     }
-
+    
     boolean isEnd(){
         return flag;
     }
 };
 
 public class Solution{
-    
     public static int countDistinctSubstrings(String s)
     {
         Node root=new Node();

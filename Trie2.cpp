@@ -2,7 +2,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 struct Node{
     Node *links[26];
     int cntEndWith=0;
@@ -25,11 +24,9 @@ struct Node{
         cntEndWith++;
     }
 
-
     void increasePrefix(){
         cntPrefix++;
     }
-
 
     void deleteEnd(){
         cntEndWith--;
@@ -63,7 +60,6 @@ class Trie{
             if(!node->containsKey(word[i])){
                 node->put(word[i], new Node());
             }
-
             node=node->get(word[i]);
             node->increasePrefix();
         }
@@ -83,8 +79,6 @@ class Trie{
          return node->getEnd();
      }
 
-
-
      int countWordsStartingWith(string &word){
          Node* node=root;
          for(int i=0;i<word.length();i++){
@@ -97,8 +91,6 @@ class Trie{
          }
          return node->getPrefix();
      }
-
-
 
      void erase(string &word){
          Node* node=root;

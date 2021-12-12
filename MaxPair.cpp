@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 struct Node{
     //takes this because we need nly 0 and 1
     Node *links[2];
@@ -17,7 +16,6 @@ struct Node{
     void put(int bit, Node* node){
         links[bit]=node;
     }
-
 }; 
 
 class Trie{
@@ -26,7 +24,6 @@ class Trie{
          Trie(){
              root=new Node();
          }
-
 
     public: 
          void insert(int num){
@@ -39,7 +36,6 @@ class Trie{
                  node=node->get(bit1);
              }
          }
-
 
          public : 
            int findMax(int num){
@@ -56,14 +52,13 @@ class Trie{
                }
            }
            return maxNum;
-}
+    }
 };
 
 int maxXOR(int n, int m, vector<int> & arr1, vector<int> &arr2) {{
     Trie trie;
     for(int i=0;i<n;i++){
         trie.insert(arr1[i]);
-
     }
 
     int maxi=0;
@@ -72,7 +67,3 @@ int maxXOR(int n, int m, vector<int> & arr1, vector<int> &arr2) {{
     }
     return maxi;
 }
-
-
-
-

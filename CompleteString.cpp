@@ -2,8 +2,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 struct Node{
     Node *links[26];
     bool flag=false; 
@@ -67,8 +65,6 @@ class Trie{
          return flag;
      }
 };
-
-
 
 string completeString(int n, vector<string> &a){
     Trie* obj=new Trie();
