@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 class Node{
     Node links[]=new Node[26];
@@ -6,7 +7,6 @@ class Node{
     int cntPrefix=0;
 
     public Node(){
-
     }
     
     boolean containsKey(char ch){
@@ -28,7 +28,6 @@ class Node{
     void increasePrefix(){
         cntPrefix++;
     }
-
 
     void deleteEnd(){
         cntEndWith--;
@@ -56,7 +55,6 @@ class Node{
      }
 
      //Inserts a word into the trie
-
      public void insert(String word){
          Node node=root;
          for(int i=0;i<word.length();i++){
@@ -68,7 +66,6 @@ class Node{
          }
          node.increaseEnd();
      }
-
 
      public int countWordsEqualTo(String word){
          Node node=root;
@@ -83,7 +80,6 @@ class Node{
          retrun node.getEnd();
      }
 
-
      public int countWordsStartingWith(String word){
          Node node=root;
          for(int i=0;i<word.length;i++){
@@ -96,8 +92,6 @@ class Node{
          }
          return node.getPrefix();
      }
-
-
 
      public void erase(String word){
          Node node=root;
