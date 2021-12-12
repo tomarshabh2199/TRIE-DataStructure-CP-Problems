@@ -51,7 +51,7 @@
     You are given two arrays of non-negative integers say ‘arr1’ and ‘arr2’. Your task is to find the maximum value of ( ‘A’ xor ‘B’ ) where ‘A’ and ‘B’ are any element from ‘arr1’ and ‘arr2’ respectively and ‘xor’ represents the bitwise xor operation.
       
       
- 6.Max Xor Queries.
+ 6.Max Xor Queries
     
     Problem Statement-
     You are given an array/list ‘ARR’ consisting of ‘N’ non-negative integers. You are also given a list ‘QUERIES’ consisting of ‘M’ queries, where the ‘i-th’ query is a list/array of two non-negative integers ‘Xi’, ‘Ai’, i.e ‘QUERIES[i]’ = [‘Xi’, ‘Ai’].
