@@ -5,7 +5,6 @@ class Node{
     Node links[]=new Node[2];
 
     public Node(){
-
     }
 
     boolean conatinsKey(int ind){
@@ -30,7 +29,6 @@ class Trie{
     Trie(){
         root=new Node();
     }
-
 
     //Inserts a word into the trie.
     public staic void insert(int num){
