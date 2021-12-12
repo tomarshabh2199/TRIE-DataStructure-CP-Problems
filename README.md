@@ -35,6 +35,15 @@
      String ‘P’ is lexicographically smaller than string ‘Q’, if : 
      1. There exists some index ‘i’ such that for all ‘j’ < ‘i’ , ‘P[j] = Q[j]’ and ‘P[i] < Q[i]’. E.g. “ninja” < “noder”.
      2. If ‘P’ is a prefix of string ‘Q’, e.g. “code” < “coder”.
+     
+4.Count Distinct Substrings
+
+     Problem Statement
+     Given a string 'S', you are supposed to return the number of distinct substrings(including empty substring) of the given string.
+     You should implement the program using a trie.
+     Note :
+     A string ‘B’ is a substring of a string ‘A’ if ‘B’ that can be obtained by deletion of, several characters(possibly none) from the start of ‘A’ and                            several characters(possibly none) from the end of ‘A’. 
+     Two strings ‘X’ and ‘Y’ are considered different if there is at least one index ‘i’  such that the character of ‘X’ at index ‘i’ is different from the character of ‘Y’        at index ‘i’(X[i]!=Y[i]).
 
 
 
