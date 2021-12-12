@@ -41,6 +41,7 @@
      Problem Statement-
      Given a string 'S', you are supposed to return the number of distinct substrings(including empty substring) of the given string.
      You should implement the program using a trie.
+     
      Note :
      A string ‘B’ is a substring of a string ‘A’ if ‘B’ that can be obtained by deletion of, several characters(possibly none) from the start of ‘A’ and                            several characters(possibly none) from the end of ‘A’. 
      Two strings ‘X’ and ‘Y’ are considered different if there is at least one index ‘i’  such that the character of ‘X’ at index ‘i’ is different from the character of ‘Y’        at index ‘i’(X[i]!=Y[i]).
@@ -49,6 +50,17 @@
    
       Problem Statement-
       You are given two arrays of non-negative integers say ‘arr1’ and ‘arr2’. Your task is to find the maximum value of ( ‘A’ xor ‘B’ ) where ‘A’ and ‘B’ are any element from ‘arr1’ and ‘arr2’ respectively and ‘xor’ represents the bitwise xor operation.
+      
+      
+ 6.Max Xor Queries.
+    
+    Problem Statement-
+    You are given an array/list ‘ARR’ consisting of ‘N’ non-negative integers. You are also given a list ‘QUERIES’ consisting of ‘M’ queries, where the ‘i-th’ query is a list/array of two non-negative integers ‘Xi’, ‘Ai’, i.e ‘QUERIES[i]’ = [‘Xi’, ‘Ai’].
+    The answer to the ith query, i.e ‘QUERIES[i]’ is the maximum bitwise xor value of ‘Xi’ with any integer less than or equal to ‘Ai’ in ‘ARR’.
+    You should return an array/list consisting of ‘N’ integers where the ‘i-th’ integer is the answer of ‘QUERIES[i]’.
+    
+     Note:
+     1. If all integers are greater than ‘Ai’ in array/list ‘ARR’  then the answer to this ith query will be -1.
 
 
 
