@@ -1,84 +1,30 @@
 # TRIE-DataStructure-CP-Problems
 
 1.Implement Trie
-Implement Trie Data Structure to support these operations:
-insert(word) - To insert a string "word" in Trie
-search(word) - To check if string "word" is present in Trie or not.
-startsWith(word) - To check if there is any string in the Trie that starts with the given prefix string "word".
+
+     Implement Trie Data Structure to support these operations:
+     insert(word) - To insert a string "word" in Trie
+     search(word) - To check if string "word" is present in Trie or not.
+     startsWith(word) - To check if there is any string in the Trie that starts with the given prefix string "word".
+     
+     
+2.Implement Trie ll
+
+     Ninja has to implement a data structure ”TRIE” from scratch. Ninja has to complete some functions.
+     1) Trie(): Ninja has to initialize the object of this “TRIE” data structure.
+
+     2) insert(“WORD”): Ninja has to insert the string “WORD”  into this “TRIE” data structure.
+
+     3) countWordsEqualTo(“WORD”): Ninja has to return how many times this “WORD” is present in this “TRIE”.
+
+     4) countWordsStartingWith(“PREFIX”): Ninjas have to return how many words are there in this “TRIE” that have the string “PREFIX” as a prefix.
+
+     5) erase(“WORD”): Ninja has to delete this string “WORD” from the “TRIE”.
+     
+         Note:
+         1. If erase(“WORD”) function is called then it is guaranteed that the “WORD” is present in the “TRIE”.
+
+         2. If you are going to use variables with dynamic memory allocation then you need to release the memory associated with them at the end of your solution.
 
 
-Three type of queries denote these operations:
-Type 1: To insert a string "word" in Trie.
-1 word
 
-Type 2: To check if the string "word" is present in Trie or not.
-2 word
-
-Type 3: To check if there is any string in the Trie that starts with the given prefix string "word".
-3 word
-
-
-Input Format :
-The first line contains an Integer 'Q' which denotes the number of queries to be run. Then next 'Q' lines denote each query:
-
-The first and only line of each query contains the type of query and a string "word" separated by a single space.
-Output Format :
-For each query of Type 2 print the string "true" if string "word" is present in Trie or "false" otherwise.
-For each query of Type 3 print the string "true" if there is any string in the Trie that starts with the given prefix string "word" or "false" otherwise.
-
-Output for every query will be printed in a separate line.
-Note:
-You are not required to print the output explicitly, it has already been taken care of. Just implement the function.
-Constraints :
-1 <= Q <= 5*10^4
-1 <= W <= 10
-
-Where 'Q' is the number of queries, and 'W' is the length of the "word".
-All input of "word" will consist of only lowercase letters a-z.
-Sample Input 1 :
-5
-1 hello
-1 help
-2 help
-3 hel
-2 hel 
-Sample Output 1 :
-true
-true
-false
- Explanation To Sample Input 1 :
-Query 1: "hello" is inserted
-Query 2: "help" is inserted
-Query 3: "true" is printed as "help" is present
-Query 4: "true" is printed as "hello" and "help" is present having the prefix "hel"
-Query 5: "false" is printed as "hel" is not present
-Sample Input 2 :
-10
-1 aaaa
-1 aaaaaa
-1 bcd
-2 aaaaa
-3 aaaaa
-3 bc
-2 bc
-1 bc
-3 bcda
-2 bc
-Sample Output 2 :
-false
-true
-true
-false
-false
-true
- Explanation To Sample Input 2 :
-Query 1: "aaaa" is inserted
-Query 2: "aaaaaa" is inserted
-Query 3: "bcd" is inserted
-Query 4: "false" is printed as "aaaaa" is not present
-Query 5: "true" is printed as "aaaaaa" is present having the prefix "aaaaa"
-Query 6: "true" is printed as "bcd" is present having the prefix "bc"
-Query 7: "false" is printed as "bc" is not present
-Query 8: "bc" is inserted
-Query 9: "false" is printed as no word is present having the prefix "bcda"
-Query 10: "true" is printed as "bc" is present
