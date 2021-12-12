@@ -25,6 +25,16 @@
          1. If erase(“WORD”) function is called then it is guaranteed that the “WORD” is present in the “TRIE”.
 
          2. If you are going to use variables with dynamic memory allocation then you need to release the memory associated with them at the end of your solution.
+         
+ 3.Complete String
+ 
+     Ninja developed a love for arrays and strings so this time his teacher gave him an array of strings, ‘A’ of size ‘N’. Each element of this array is a string.                  The teacher taught Ninja about prefixes in the past, so he wants to test his knowledge.A string is called a complete string if every prefix of this string is.                also present in the array ‘A’. Ninja is challenged to find the longest complete string in the array ‘A’.
+     If there are multiple strings with the same length, return the lexicographically smallest one and if no string exists, return "None".
+                    
+     Note :
+     String ‘P’ is lexicographically smaller than string ‘Q’, if : 
+     1. There exists some index ‘i’ such that for all ‘j’ < ‘i’ , ‘P[j] = Q[j]’ and ‘P[i] < Q[i]’. E.g. “ninja” < “noder”.
+     2. If ‘P’ is a prefix of string ‘Q’, e.g. “code” < “coder”.
 
 
 
